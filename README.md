@@ -3,7 +3,7 @@
 ![Four button USB MIDI controller](./images/buttons4.jpg)
 
 Sometimes a piece of gear really needs a few MIDI control buttons strategically
-located. Now you can stick them on.
+located. Now you can stick them on where needed.
 
 ## Hardware
 
@@ -27,10 +27,21 @@ hard to remove.
 
 ## Software
 
-Install the MIDIUSB and MIDI libraries using the Arduino IDE library manager.
+Install the bounce2, MIDIUSB, and MIDI libraries using the Arduino IDE library
+manager.
 
 The sketch can be customized to send MIDI messages.
 
 NOTE: System Exclusve arrays should be stored in program memory using the
 PROGMEM attribute then sent using the USBSystemExclusive_P function. If not,
 RAM will be quickly used up.
+
+## Related Projects
+
+Twelve button MIDI USB controller.
+
+https://github.com/gdsports/buttons12
+
+101 button MIDI DIN controller.
+
+https://github.com/gdsports/USBHIDKbd2MIDI
